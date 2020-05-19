@@ -26,5 +26,5 @@ npm i static-server
 ## install glup-newy
 npm install --save-dev gulp-newy
 
-##Set-ExecutionPolicy Unrestricted
+## Set-ExecutionPolicy Unrestricted
 //taskkill /F /IM node.exe   ==> to stop all node instance using port 8000
