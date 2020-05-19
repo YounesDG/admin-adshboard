@@ -1,0 +1,48 @@
+.chart-home-page {
+    display: block;
+height: 100%;
+
+
+
+    .chart {
+        margin: 18px 0;
+        background-color: #fffff7;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease-in-out;
+        border-radius: 8px;
+
+        background-size: 200%;
+        background-image: linear-gradient(to right, #fff, #d3f9ec29, #fff);
+
+        &:hover {
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+            background-position: right;
+        }
+
+    }
+
+    .first-row{
+
+        
+    }
+
+    .second-row {
+        margin-bottom: 25px;
+        display: flow-root;
+
+        .chart-second-row {
+            float: left;
+            width: 60% !important;
+        }
+
+        .table-display-right {
+            width: 35% !important;
+            height: 100%;
+            float: right;
+        }
+    }
+
+
+
+
+}

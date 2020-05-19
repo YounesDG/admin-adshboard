@@ -1,0 +1,44 @@
+.sidebar.sidebar-default-theme
+    .logo-row
+        .image-logo-area
+            a(href="#") 
+                img(src="img/icon_logo.png", alt="logo")
+        .logo-area
+            a(href="#")
+                span.text-center DGRSDT
+
+    ul.links-area.list-unstyled
+        li: a(href="homepage.html" class= pageTitle === 'Homepage' ? 'active' : '') 
+                i.fas.fa-tachometer-alt.fa-lg 
+                span Dashboard
+        li: a(href="advanced-search.html" class= pageTitle === 'Search' ? 'active' : '')
+                i.fas.fa-search.fa-lg 
+                span Search
+        li
+            a(data-toggle="collapse").toggle-submenu(href="#") 
+                i.fas.fa-chart-bar.fa-lg 
+                span Statistiques
+                i.fa.fa-angle-right
+            ul.child-links.list-unstyled
+                li: a(href="#") Cartographie
+                li: a(href="#") Thématique
+                li: a(href="#") Evolution
+                li: a(href="#") Inventeurs
+
+        li
+            a(data-toggle="collapse").toggle-submenu(href="#")
+                i.fas.fa-cubes.fa-lg
+                span Services
+                i.fa.fa-angle-right
+            ul.child-links.list-unstyled
+                li: a(href="inventeurs.html" class= pageTitle === 'Inventeurs' ? 'active' : '') Inventeurs
+                li: a(href="organisme.html" class= pageTitle === 'Inventeurs' ? 'active' : '')  Organisme
+                li: a(href="domaine.html" class= pageTitle === 'Inventeurs' ? 'active' : '')  Domaine
+                li: a(href="etablissment.html" class= pageTitle === 'Inventeurs' ? 'active' : '')  Etablissment
+        li: a(href="upload.html" class= pageTitle === 'Upload' ? 'active' : '') 
+                i.fas.fa-upload.fa-lg               
+                span Upload
+        li: a(href="seo.html" class= pageTitle === 'SEO' ? 'active' : '') 
+                i.fas.fa-chart-line.fa-lg               
+                span SEO
+ 

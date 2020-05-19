@@ -1,0 +1,159 @@
+$themes:(green-theme:(color:#38d39f),
+    blue-theme:(color:#91E2FF),
+    red-theme:(color:#FF4233),
+    orange-theme:(color:#FF7916),
+    black-theme:(color:#2c3e50));
+
+$sidebarColors:(sidebar-green-theme:(sidebar-color:#F),
+    sidebar-blue-theme:(sidebar-color:#91E2FF),
+    sidebar-red-theme:(sidebar-color:#FF4233),
+    sidebar-orange-theme:(sidebar-color:#FF7916),
+    sidebar-black-theme:(sidebar-color:#2c3e50));
+
+@each $theme,
+$map in $themes {
+    .#{$theme} {
+        $color: map-get($map, color);
+
+        .page .page-head .page-title {
+            color: $color;
+        }
+
+        .header .username-container .dropdown-menu .user-info h4 {
+            color: $color;
+        }
+
+        .cards-home-head .card-home-head {
+            background-image: linear-gradient(to right, $color, rgba($color, .87), $color);
+        }
+
+        //Table
+        .btn-group-vertical>.btn,
+        .btn-group>.btn,
+        .page-item.active .page-link {
+            background-color: rgba($color, .7) !important;
+            border-color: $color !important;
+
+            &:hover {
+                background-color: $color !important;
+            }
+        }
+
+        //Header
+        .header {
+            .toggle-add-content {
+                transition: .3s;
+                color: rgba($color, .5) !important;
+
+                &:hover {
+                    color: $color !important;
+                }
+            }
+        }
+
+        //Form Upload
+        .upload-file {
+
+            .btn-upload {
+                &:hover {
+                    background-image: linear-gradient(to right, $color, $color, $color);
+                    background-position: right;
+                }
+            }
+        }
+
+        #form-upload {
+
+            
+
+                button {
+                  background-color: $color;
+                }
+        
+        .step {
+            background-color: $color;
+
+            &:hover {
+                background-color: $color;
+            }
+
+        }
+        }
+
+
+        .sidebar-options {
+            ul {
+                $colors: #32be8f, #91E2FF, #FF4233, #FF7916, #2c3e50;
+
+                @for $i from 1 through length($colors) {
+                    li:nth-child(#{$i}) {
+                        background-color: nth($colors, $i);
+                    }
+                }
+
+                li {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 10%;
+                    opacity: .6;
+                    cursor: pointer;
+                    display: inline-block;
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+
+                .default-options-side-bar {
+                    font-size: 12px;
+                    color: #4A4A4A;
+                    margin-top: 12px;
+                    cursor: pointer;
+                    display: block;
+                    transition: .3s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: #007;
+
+                    }
+                }
+
+
+            }
+
+
+                    //settings icon
+        .sidebar-width {
+          
+            .custom-control-input:checked~.custom-control-label::before {
+                border-color: $color !important;
+                background-color: rgba($color, .7) !important;
+
+            }
+
+        }
+
+        }
+
+
+
+    }
+}
+
+@each $sidebarColor,
+$c in $sidebarColors {
+    .#{$sidebarColor} {
+        $sidebar-color: map-get($c, sidebar-color);
+
+        .page .sidebar .links-area>li>a span {
+            -webkit-transition: .3s;
+            transition: .3s;
+            color: #FF4233;
+        }
+
+        .page-footer {
+            background-color: #FF4233;
+        }
+    }
+}

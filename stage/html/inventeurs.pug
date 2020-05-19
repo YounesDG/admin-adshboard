@@ -1,0 +1,19 @@
+-var pageTitle="Inventeurs";
+<!DOCTYPE html>
+html(lang="en").h-100
+    head
+        include pug/layouts/meta
+        include pug/layouts/styles
+    body.d-flex.flex-column.h-100
+        .page.home-page
+            include pug/components/settings-box
+            include pug/layouts/sidebar
+            .content-area.d-flex.flex-column
+                include pug/layouts/header
+                include pug/components/breadcrumb
+                .container-fluid
+                    .content
+                    include pug/components/top-card-services
+                    include pug/table/table
+                include pug/layouts/footer
+    include pug/layouts/scripts

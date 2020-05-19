@@ -1,0 +1,18 @@
+-var pageTitle="Upload";
+<!DOCTYPE html>
+html(lang="en").h-100
+    head
+        include pug/layouts/meta
+        include pug/layouts/styles
+    body.d-flex.flex-column.h-100
+        .page.home-page
+            include pug/components/settings-box
+            include pug/layouts/sidebar
+            .content-area.d-flex.flex-column
+                include pug/layouts/header
+                .container-fluid
+                    .content
+                    include pug/components/page-head
+                    include pug/layouts/form-upload
+                include pug/layouts/footer
+    include pug/layouts/scripts

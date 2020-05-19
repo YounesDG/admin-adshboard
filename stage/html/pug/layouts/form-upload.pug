@@ -1,0 +1,94 @@
+.row
+
+div.upload-file(style='position:relative;')
+  a.btn.btn-upload(href='javascript:;')
+    i.fas.fa-upload.fa-lg.upload-icon
+    | Choose File...
+    input(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+  span#upload-file-info.label.label-info
+
+
+
+form#form-upload.container
+
+    ul.nav.nav-tabs
+        li.nav-item.step.active#user_info
+            a.nav-link.active_tab1(style='border: 1px solid #ccc;') User info
+        li.nav-item.step#organisme_info
+            a.nav-link.inactive_tab1(style='border: 1px solid #ccc;') Organisme
+        li.nav-item.step#resume_info
+            a.nav-link.inactive_tab1(style='border: 1px solid #ccc;') Résumé
+        li.nav-item.step#pi_info
+            a-link.inactive_tab1(style='border: 1px solid #ccc;') Info PI
+
+
+
+
+    .form-row#user_info-content
+        .form-group.col-md-6
+            label(for='inputNom') Nom
+            input#inputNom.form-control(type='text', placeholder='Nom')
+        .form-group.col-md-6
+            label(for='inputPrenom') Prenom
+            input#inputNom.form-control(type='text', placeholder='Prenom')
+
+        .form-group.col-md-6
+            label(for='inputNom') Tel
+            input#inputNom.form-control(type='tel', placeholder='tel')
+        .form-group.col-md-6
+            label(for='inputPrenom') FAX
+            input#inputNom.form-control(type='tel', placeholder='FAX')
+        
+        .form-group.col-md-6
+            label(for='inputNom') GSM
+            input#inputNom.form-control(type='tel', placeholder='GSM')
+        .form-group.col-md-6
+            label(for='inputPrenom') Email
+            input#inputNom.form-control(type='email', placeholder='Email')
+    
+    .form-row#organisme_info-content
+        .form-group.col-md-6
+            label(for='inputNom') Pay Organisme
+            select.custom-select#inputNom(required)
+                option(selected)(disabled)(value="") Pay Organisme...
+                option ...
+        .form-group.col-md-6
+            label(for='inputPrenom') Pay
+            select.custom-select#inputNom(required)
+                option(selected)(disabled)(value="") Pay ...
+                option ...
+
+        .form-group.col-md-6
+            label(for='inputNom') Date Depot
+            input#inputNom.form-control(type='date', placeholder='Date Depot')
+        .form-group.col-md-6
+            label(for='inputPrenom') N° Dépot
+            input#inputNom.form-control(type='num', placeholder='N° Dépot')   
+
+        .form-group.col-md-6
+            label(for='inputNom') Date Enregistrement
+            input#inputNom.form-control(type='date', placeholder='Date Depot')
+        .form-group.col-md-6
+            label(for='inputPrenom') N° Enregistrement
+            input#inputNom.form-control(type='num', placeholder='N° Enregistrement')       
+
+    .form-row#resume_info-content
+        .form-group.col-md-12
+            label(for='inputNom') Resumé
+            textarea.form-control#validationTextarea(placeholder="Required example textarea")(required) 
+    
+        .form-group.col-md-12
+            label.custom-file-label(for="validatedCustomFile") Choose file...
+            input(type="file")(required).custom-file-input#validatedCustomFile
+
+    .form-row#pi_info-content
+        .form-group.col-md-6
+            label(for='inputNom') Organisme Employeur
+            select.custom-select#inputNom(required)
+                option(selected)(disabled)(value="") Organisme Employeur ...
+                option ...
+        .form-group.col-md-6
+            label(for='inputPrenom') Exmploitation du Titre Du PI 
+            input#inputNom.form-control(type='text', placeholder='PI')
+
+    button.btn#btn-next  Next 

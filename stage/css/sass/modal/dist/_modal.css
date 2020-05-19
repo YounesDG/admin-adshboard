@@ -1,0 +1,19 @@
+.modaDG .modal-header img {
+  width: 44px !important;
+}
+
+.modaDG .modal-footer .close {
+  margin-right: 15px;
+  font-size: 1.3rem;
+  transition: .3s;
+}
+
+.modaDG .modal-footer .close:hover {
+  color: #330404;
+  background: none;
+  font-size: 1.3rem;
+}
+
+.modaDG .modal-footer .save-change {
+  border-color: transparent;
+}

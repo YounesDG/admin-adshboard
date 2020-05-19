@@ -1,0 +1,22 @@
+- var pageTitle = 'Homepage';
+<!DOCTYPE html>
+html(lang="en").h-100
+    head
+        include pug/layouts/meta
+        include pug/layouts/styles
+    body.d-flex.flex-column.h-100
+        .page.home-page
+            include pug/components/settings-box
+            include pug/layouts/sidebar
+            .content-area
+                include pug/layouts/header
+                .container-fluid.d-flex.flex-column
+                    .content
+                    include pug/components/page-head
+                    include pug/components/home-page-header
+                    include pug/charts/chart-home-page
+                    include pug/table/table-home-page
+                include pug/layouts/footer
+
+    include pug/layouts/scripts
+        

@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  /*a name to be used later*/
+  font-family: 'OpenSans-Bold';
+    /*URL to font*/
+  src: url('..fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+body {
+
+
+  
+  background-color: #dddddd30;
+  font-family:  sans-serif;
+&.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+&.Roboto{
+  font-family: 'Titillium_Web', sans-serif;
+}
+
+}
+

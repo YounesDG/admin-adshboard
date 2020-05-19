@@ -1,0 +1,45 @@
+.page-footer {
+
+    background-color: #464745;
+    color: #fff;
+
+    a {
+        cursor: pointer;
+        color: #fff;
+        float: right;
+        
+        &:hover {
+            text-decoration: none;
+            color: #32be8f;
+        }
+
+    }
+
+    &.sidebar-green-theme {
+        background: rgb(50, 190, 143);
+        background: linear-gradient(180deg, rgba(50, 190, 143, 1) 32%, rgba(169, 247, 220, 1) 100%, rgba(140, 196, 200, 1) 100%);
+    }
+
+    &.sidebar-blue-theme {
+        background: rgb(145, 226, 255);
+        background: radial-gradient(circle, rgba(145, 226, 255, 1) 32%, rgba(169, 247, 220, 1) 100%, rgba(50, 176, 221, 1) 100%);
+    }
+
+    &.sidebar-red-theme {
+        background: rgb(230, 89, 77);
+        background: radial-gradient(circle, rgba(230, 89, 77, 1) 32%, rgba(246, 143, 73, 1) 100%, rgba(236, 188, 185, 1) 100%);
+    }
+
+    &.sidebar-orange-theme {
+        background: rgb(250, 117, 28);
+        background: radial-gradient(circle, rgba(250, 117, 28, 1) 32%, rgba(246, 143, 73, 1) 100%, rgba(236, 136, 70, 1) 100%);
+    }
+
+    &.sidebar-black-theme {
+        background-color: #2c3e50;
+    }
+
+
+
+
+}

@@ -1,0 +1,15 @@
+.table-display {
+  margin: 34px 0;
+}
+
+.btn-group-vertical > .btn,
+.btn-group > .btn {
+  background-color: #38d39f;
+  color: #fff;
+  border-color: #32be8f;
+}
+
+.page-item.active .page-link {
+  background-color: #38d39f !important;
+  border-color: #32be8f !important;
+}

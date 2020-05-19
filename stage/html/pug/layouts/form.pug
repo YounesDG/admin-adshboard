@@ -1,0 +1,59 @@
+.advanced-search
+    .container
+
+        form#searchForm
+            .advanced-search
+                .row
+                    .col
+                        .form-group
+                            label(for='titre_prop_intellec') Mot Clé
+                            input(type='text')(name='titre_prop_intellec')(placeholder='')(aria-label='Username')(aria-describedby='addon-wrapping')(value='')(data-role="tagsinput").form-control#titre_prop_intellec
+
+                .row
+                    .col
+                        .form-group
+                            label(for='inventeurs') Inventeur
+                            input(type='text')(placeholder='')(aria-label='Username')(aria-describedby='addon-wrapping')(value='')(name='inventeurs')#inventeurs.form-control
+
+                    .col
+                        .form-group
+                            label(for='inventeurs') Inventeur
+                            input(type='text')(placeholder='')(aria-label='Username')(aria-describedby='addon-wrapping')(value='')(name='inventeurs')#inventeurs.form-control
+
+                    .col
+                        .form-group
+                            label(for='inventeurs') Inventeur
+
+                            input(type='text')(placeholder='')(aria-label='Username')(aria-describedby='addon-wrapping')(value='')(name='inventeurs')#inventeurs.form-control
+
+
+
+                .row
+                    .col
+                        .form-group
+                            label.choice-search(for=intitule_organisme) Organisme
+                            select#intitule_organisme(name=intitule_organisme).form-control.chosen
+                                option All
+                    .col
+                        .form-group
+                            label.choice-search(for=intitule_organisme) Organisme
+                            select#intitule_organisme(name=intitule_organisme).form-control.chosen
+                                option All
+                    .col
+                        .form-group
+                            label.choice-search(for=intitule_organisme) Organisme
+                            select#intitule_organisme(name=intitule_organisme).form-control.chosen
+                                option All
+
+
+
+
+
+            .btn-action
+                .row.justify-content-md-center
+
+                    #reset.col-md-auto.align-items-center
+                        button(type="reset")(value="Reset").btn.btn-danger Reset
+
+                    #btnAdvancedSearch.col-md-auto.align-items-center
+                        button(type="submit")(value="Submit").btn.btn-success Chercher
