@@ -1,3 +1,5 @@
+![Alt text](dist/img/admin-preview.gif/?raw=true "Title")
+
 # admin-adshboard
 admin-adshboard-DGRSDT
 
