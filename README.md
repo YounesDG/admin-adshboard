@@ -1,7 +1,10 @@
-![Alt text](dist/img/admin-preview.gif/?raw=true "Title")
-
 # admin-adshboard
 admin-adshboard-DGRSDT
+
+Preview
+![Alt text](dist/img/admin-preview.gif/?raw=true "Title")
+
+
 
 ## install gulp globally 
 npm i gulp@3.9.1
