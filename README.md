@@ -6,7 +6,7 @@ Preview
 
 
 
-## install gulp globally 
+### install gulp globally 
 npm i gulp@3.9.1
 
 ## initilise the project
