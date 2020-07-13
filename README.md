@@ -9,19 +9,19 @@ Preview
 ### install gulp globally 
 npm i gulp@3.9.1
 
-## initilise the project
+### initilise the project
 npm init
 
-## install gulp locally (project)
+### install gulp locally (project)
 npm i gulp@3.9.1 --save-dev
 
-## install all nessary plugin
+### install all nessary plugin
 npm i gulp-concat gulp-sass gulp-autoprefixer gulp-pug gulp-livereload gulp-notify gulp-sourcemaps gulp-minify --save-dev
 
-## install a static server 
+### install a static server 
 npm i static-server
 
-## add this line to package.json
+### add this line to package.json
  "browsserlist":[
     "last 2 version ",
     ">2%"
