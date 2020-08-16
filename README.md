@@ -33,3 +33,10 @@ npm install --save-dev gulp-newy
 
 ## Set-ExecutionPolicy Unrestricted
 //taskkill /F /IM node.exe   ==> to stop all node instance using port 8000
+
+
+##How we compile Sass to css
+sass --watch stage\css\main.scss:dist\css\main.css
+
+##How we compile Pug to HTML
+gulp watch

@@ -1,0 +1,40 @@
+#masson.container
+  .card-columns
+    .card
+      // Card Header
+      .header-card
+        h5 Titre Card
+      .title-card
+        h6.text-center
+          | Gazéificateur De Biomasse À Lit Fixe Contre Courant « Up Druft
+          | »
+      .card-body
+        .Author
+          p
+            | Author-1 , Author-2
+        // Start badge
+        .row.my-badge
+          .col(style='margin-bottom: 15px;')
+            span.badge.badge-pill.badge-success
+              | badge-1
+          .col(style='margin-bottom: 15px;')
+            span.badge.badge-pill.badge-info
+              | badge-2
+        // End Badge
+        // Start card footer
+      .card-footer.text-muted.text-center
+          .row
+            // print PDF
+            .col
+              button.print-button(type='button', data-toggle=' tooltip', data-placement='right', title='Print Document')
+                i.fas.fa-print.fa-lg  
+            // Show PDF
+            .col
+              a(href='#', target='_blank', data-toggle='tooltip', data-placement='right', title='Show PDf')
+                i.fas.fa-file-pdf.fa-lg
+            // More Details =>  Modal
+            .col
+              a(href='#modal', data-toggle='modal', data-placement='right', data-target='#my-modal', title='Show More')
+                i.fas.fa-angle-double-right.fa-lg
+              // Model
+              // End Card
