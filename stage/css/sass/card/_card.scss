@@ -1,3 +1,38 @@
+/*number of page + next-previus*/
+.next-previus {
+
+    a {
+        border: none;
+        padding: 0;
+        display: inline;
+        outline: none;
+        background-color: none;
+    }
+
+    .page-link {
+        background-color: transparent;
+    }
+
+    .page-link:hover {
+        text-decoration: none;
+        background-color: transparent;
+        border-color: solid 1px red;
+
+    }
+
+    a:hover i {
+
+        color: #4ba54b;
+
+    }
+}
+
+
+
+
+
+
+
 #masson {
     margin-top: 25px;
     position: relative;
@@ -8,6 +43,7 @@
 
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
         transition: all 0.5s ease-in-out;
+
         &:hover {
             box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
                 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
@@ -16,7 +52,7 @@
         }
     }
 
-    
+
 
     .header-card {
         background-color: #41464b;
